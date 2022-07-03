@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .2s ease;
+  background-color: rgb(150, 150, 150);
+}
+header {
+  height: 10%; /*80px;*/
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: all .4s ease;
+  background-color: rgb(0, 15, 32);
+}
+header > .thenav {
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  padding: 10px 80px;
+  justify-content: space-between;
+}
+header > .thenav > .mav > h1 {
+  color: #fff;
+  font-family: serif;
+  font-weight: 700;
+  font-size: 50px;
+  transition: all .45s ease;
+}
+header > .thenav > .mav > h1 > span {
+  color: #5e0761;
+  font-family: serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+header > .thenav > .thememode {
+  height: 20px;
+  width: 25%;
+  display: flex;
+  transition: all .2s ease;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;/*
+  background-color: red;*/
+}
+header > .thenav > .thememode > img {
+  object-fit: contain;
+  transition: all .2s ease;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  filter: invert();
+}
+header > .thenav > .nav-cont > nav > .shownav {
+  display: none;
+  filter: invert();
+  cursor: pointer;
+  height: 20px;
+}
+header > .thenav > .nav-cont > nav > .hidenav {
+  height: 15px;
+  cursor: pointer;
+  filter: invert();
+  display: none;
+}
+header > .thenav > .nav-cont > nav > .linkcont > ul {
+  display: inline-block;
+  padding: 20px 0;
+  background-color: none;
+}
+header > .thenav > .nav-cont > nav > .linkcont > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 15px;
+}
+header > .thenav > .nav-cont > nav > .linkcont > ul > li > a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header > .thenav > .nav-cont > nav > .linkcont > ul > li > a.active,
+header > .thenav > .nav-cont > nav > .linkcont > ul > li > a:hover {
+  color: #fff;/*#f1f1f1;*/
+  border-bottom: 2px solid #fff;/*#ffffff;*/
+}
+header > .thenav > .nav-cont > nav > .linkcont > ul > .my-logo {
+  height: 230px;
+  display: none;
+  margin: 0 auto 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+header > .thenav > .nav-cont > nav > .linkcont > ul > .my-logo > img {
+  width: 80%;
+  object-fit: contain;
+}
+
+section {
+  height: 83%; /*500px;*/
+  width: 100%;
+  transition: all 2s ease;
+  position: relative;
+  background-size: cover;
+  background-image: url(../IMAGES/Elevation-Worship-Maverick-City-Jireh-750x400.png);
+}
+section > .container {
+  height: 100%; /*500px;*/
+  width: 100%;
+  transition: all .45s ease;
+  position: relative;
+  background-color: rgba(0, 3, 15, .8);/*
+  background-color: rgba(255, 255, 255, .1);*/
+}
+section > .container > .content {
+  width: max-content;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  -webkit-transform: translate(-70%, -50%);
+  transition: .2s ease;
+}
+section > .container > .content > h1 {
+  color: #fff;
+  text-align: right;
+  font-family: Venica Serif;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 60px;
+}
+section > .container > .content > .more-l {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  padding-top: 35px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section > .container >.content > .more-l > .mav-container {
+  height: 80px;
+  width: 70%;
+  display: block;
+  position: relative;
+}
+section > .container >.content > .more-l > .mav-container > a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 1.5px;
+  border-color: #fff;
+  border-style: solid;
+  padding: 7px 10px 10px 5px;
+  margin: 15px;
+  transition: 5s ease;
+}
+section > .container >.content > .more-l > .mav-container > a:hover {
+  border-style: dashed;
+}
+footer {
+  height: 7%; /*50px;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: relative;
+  background-color: rgb(0, 18, 32);
+}
+footer > p {
+  color: #fff;
+}
+footer > p > span {
+  color: #5e0761;
+  font-family: serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1050px) {
+  header {
+    height: 8%;
+  }
+  header > .thenav {
+    padding: 10px 40px;
+  }
+  header > .thenav > .mav > h1 {
+    font-size: 35px;
+  }
+  header > .thenav > .mav > h1 > span {
+    font-size: 30px;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a {
+    font-size: 15px;
+  }
+  section {
+    height: 85%;
+  }
+  footer {
+    height: 7%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 60px;
+  }
+  header > .thenav {
+    padding: 10px 15px;
+  }
+  header > .thenav > .mav > h1 {
+    font-size: 25px;
+  }
+  header > .thenav > .mav > h1 > span {
+    font-size: 23px;
+  }
+  header > .thenav > .nav-cont > nav > .shownav {
+    display: block;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont {
+    display: flex;
+    z-index: 4;
+    display: none;
+    justify-content: center;
+    max-width: 100%;
+    height: 90vh;
+    margin-left: -85%!important;
+    position: absolute;
+    padding: 25px 0 0 0;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > .only-med {
+    background-color: rgba(255, 255, 255, .89)!important;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > .med-container-4-lnks {
+    background-color: rgba(0, 15, 32, .98);
+    height: 95%;
+    width: 95%;
+    z-index: 4;
+    transform: translateY(0, 100%);
+    transition: all 2s ease;
+    margin: 0 auto 0 auto;
+    position: relative;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 auto 0;
+    list-style-type: none;
+    margin: 35px 0;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a {
+    color: #fff;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a.active,
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a:hover {
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > .my-logo {
+    display: flex;
+  }
+  section {
+    background-position: center;
+  }
+  section > .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  section > .container > .content {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transform: translate(0, 0);
+  }
+  section > .container > .content > h1 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 45px;
+  }
+  section > .container >.content > .more-l > .mav-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section > .container >.content > .more-l > .mav-container > a {
+    padding: 6px 10px;
+    margin: 10px;
+    transition: all 2s ease;
+  }
+  footer {
+    height: 80px;
+    padding: 0 5px;
+  }
+  footer > p {
+    text-align: center;
+    font-size: 15px;
+  }
+  footer > p > span {
+    font-weight: 600;
+    font-size: 15px;
+  }
+}

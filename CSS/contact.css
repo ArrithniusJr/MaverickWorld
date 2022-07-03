@@ -1,0 +1,328 @@
+section {
+  background-image: url(../IMAGES/tetsuya-tomomatsu-Nl79ckrM_1Q-unsplash.jpg);
+}
+section > .container > .contact-container {
+  padding: 30px 30px;
+  overflow: hidden;
+  height: 100%;
+}
+section > .container > .contact-container > .cont-title {
+  height: 15%; /*50px;*/
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  position: relative;/*
+  background-color: red;*/
+}
+section > .container > .contact-container > .cont-title > h1 {
+  color: #fff;
+  font-size: 45px;
+  font-family: Venica, Serif;
+  font-weight: 500;
+}
+section > .container > .contact-container > .cont-title > h1 > span {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 200;
+}
+section > .container > .contact-container > .Information-room {
+  height: 85%;/*450px;*/
+  width: 80%;
+  padding: 30px 30px;
+  position: relative;
+  overflow: scroll;/*
+  background-color: purple;*/
+  margin: 0 auto 0 auto;
+}
+section > .container > .contact-container > .Information-room::-webkit-scrollbar {
+  display: none;
+}
+section > .container > .contact-container > .Information-room > .linear-details {
+  height: 10%; /*30px;*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;/*
+  background-color: blue;*/
+}
+section > .container > .contact-container > .Information-room > .linear-details > .ditcss {
+  border-right: 1px solid #fff;
+  padding-right: 50px;
+}
+section > .container > .contact-container > .Information-room > .linear-details > .dit > a > img {
+  height: 15px;
+  width: 20px;
+  position: relative;
+  object-fit: contain;
+  filter: invert(100);
+}
+section > .container > .contact-container > .Information-room > .linear-details > .dit > span,
+section > .container > .contact-container > .Information-room > .linear-details > .dit > span > a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+section > .container > .contact-container > .Information-room > .or-container {
+  height: 10%; /*50px;*/
+  width: 100%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;/*
+  background-color: orange;*/
+}
+section > .container > .contact-container > .Information-room > .or-container > .hor {
+  width: 30%
+}
+section > .container > .contact-container > .Information-room > .or-container > .ti {
+  width: 5%;
+}
+section > .container > .contact-container > .Information-room > .or-container > .ti > span {
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+}
+section > .container > .contact-container > .Information-room > .msg-container {
+  height: 80%; /*300px;*/
+  width: 100%;
+  padding: 10px 0;
+  overflow: scroll;
+  position: relative;
+}
+section > .container > .contact-container > .Information-room > .msg-container::-webkit-scrollbar {
+  width: 1px;
+}
+section > .container > .contact-container > .Information-room > .msg-container > form {
+  width: 70%;
+  height: 100%;
+  padding: 2px 0;
+  margin: 0 auto 0 auto;
+  position: relative;
+  text-align: center;/*
+  background-color: green;*/
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > label {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  color: #fff;
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"] {
+  height: 13%; /*30px;*/
+  width: 40%; /*250px;*/
+  padding-left: 5px;
+  border: 0;
+  color: #fff;
+  transition: .2s ease;
+  margin-left: 10px;
+  border-radius: 30px;
+  background-color: rgba(84, 84, 84, 0.5);
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"]:hover,
+section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"]:focus {
+  width: 260px;
+  background-color: rgba(84, 84, 84, 0.4);
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"]::placeholder,
+section > .container > .contact-container > .Information-room > .msg-container > form > textarea::placeholder {
+  color: rgb(255, 255, 255);
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > textarea {
+  margin: 0 auto 0 auto;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  height: 45%;
+  width: 50%;
+  border: none;
+  transition: .2s ease;
+  background-color: rgba(84, 84, 84, 0.5);
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > textarea:hover,
+section > .container > .contact-container > .Information-room > .msg-container > form > textarea:focus {
+  width: 51%;
+  background-color: rgba(100, 100, 100, 0.4);
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > input[type="submit"]{
+  border-radius: 20px;
+  padding: 10px 0;
+  border: 0;
+  height: 15%;
+  width: 20%;
+  color: #fff;
+  transition: .2s ease;
+  background-color: rgba(141, 136, 136, 0.5);
+}
+section > .container > .contact-container > .Information-room > .msg-container > form > input[type="submit"]:hover {
+  background-color: rgba(100, 100, 100, .4);
+}
+
+@media only screen and (max-width: 1135px) {
+  section > .container > .contact-container > .Information-room {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  section > .container > .contact-container > .Information-room {
+    width: 85%;
+    padding: 30px 10px;
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form > input[type="submit"]{
+    padding: 10px 5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  section > .container > .contact-container > .Information-room {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 60px;
+  }
+  header > .thenav {
+    padding: 10px 15px;
+  }
+  header > .thenav > .mav > h1 {
+    font-size: 25px;
+  }
+  header > .thenav > .mav > h1 > span {
+    font-size: 23px;
+  }
+  header > .thenav > .nav-cont > nav > .shownav {
+    display: block;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont {
+    display: flex;
+    display: none;
+    justify-content: center;
+    max-width: 100%;
+    height: 90vh;
+    margin-left: -85%!important;
+    position: absolute;
+    padding: 25px 0 0 0;
+    z-index: 2;/*
+    background: red;*/
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul {
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 95%;
+    width: 95%;
+    transform: translateY(0, 100%);
+    transition: all 2s ease;
+    margin: 0 auto 0 auto;
+    position: relative;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 auto 0;
+    list-style-type: none;
+    margin: 35px 0;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a {
+    color: #fff;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a.active,
+  header > .thenav > .nav-cont > nav > .linkcont > ul > li > a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  header > .thenav > .nav-cont > nav > .linkcont > ul > .my-logo {
+    display: flex;
+  }
+  section {
+    background-size: cover;
+    background-position: center;
+  }
+  section > .container {
+    display: flex;
+    justify-content: center;
+  }
+  section > .container > .contact-container {
+    padding: 15px 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  section > .container > .contact-container > .cont-title {
+    height: 50px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    position: relative;
+  }
+  section > .container > .contact-container > .cont-title > h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  section > .container > .contact-container > .cont-title > h1 > span {
+    font-weight: 100;
+  }
+  section > .container > .contact-container > .Information-room {
+    padding: 5px;
+    width: 100%;
+  }
+  section > .container > .contact-container > .Information-room > .linear-details > .dit > .icons {
+    display: none;
+  }
+  section > .container > .contact-container > .Information-room > .or-container {
+    height: 15px;
+    padding: 15px 0;
+    justify-content: space-around;
+  }
+  section > .container > .contact-container > .Information-room > .or-container > .hor {
+    width: 40%;
+  }
+  section > .container > .contact-container > .Information-room > .or-container > .ti > span {
+    font-size: 17px;
+  }
+  section > .container > .contact-container > .Information-room > .msg-container {
+    height: 600px;
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form {
+    width: 100%;
+    height: 550px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"] {
+    height: 40px;
+    width: 250px;
+    padding-left: 5px;
+    background-color: rgba(84, 84, 84, 0.5);
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"]:hover,
+  section > .container > .contact-container > .Information-room > .msg-container > form > input[type="text"]:focus,
+  section > .container > .contact-container > .Information-room > .msg-container > form > textarea:hover,
+  section > .container > .contact-container > .Information-room > .msg-container > form > textarea:focus {
+    width: 252px;
+    background-color: rgba(84, 84, 84, 0.4);
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form > textarea {
+    border-radius: 15px;
+    height: 120px;
+    width: 250px;
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form > input[type="submit"]{
+    border-radius: 10px;
+    padding: 13px 5px;
+    border: 0;
+    height: fit-content;
+    width: fit-content;
+    transition: 2s ease;
+    background-color: rgba(84, 84, 84, 0.5);
+  }
+  section > .container > .contact-container > .Information-room > .msg-container > form > input[type="submit"]:hover {
+    background-color: rgba(139, 136, 136, 0.3);
+  }
+}
